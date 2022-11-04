@@ -1,0 +1,34 @@
+<link href="body.component.css" rel="stylesheet" type="text/css">
+<div>
+    <div>
+        <div>
+            <table>
+
+                <thead>
+                    <tr>
+                        <td><img src="../../../assets/img.png" alt="y"></td>
+                        <td>
+                            <h2>Esperanza Del Junco</h2>
+                        </td>
+                        <td><input type="search" placeholder="Busca por nombre de repositorio" id="Buscador" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nombre</th>
+                        <th scope="row">Descripción</th>
+                        <th scope="row">Enlace</th>
+                        <th scope="row">Estrellas</th>
+                        <th scope="row">Lenguaje</th>
+                    </tr>
+                    <tr *ngFor="let rep of repositorios; let i=index">
+                        <td>{{rep.nombre}}</td>
+                        <td>{{rep.descripcion}}</td>
+                        <td>{{rep.enlace}}</td>
+                        <td>{{rep.estrellas}}</td>
+                        <td>{{rep.lenguaje}}</td>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</div>
